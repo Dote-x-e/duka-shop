@@ -1,0 +1,12 @@
+@import "compass";
+@import "theme_variables";
+
+.header_user_info{
+	position: absolute;
+	top: 5px;
+	@include rtl-right(0);
+}
+.header_user_info .dropdown-toggle{
+  display: none;
+}
+

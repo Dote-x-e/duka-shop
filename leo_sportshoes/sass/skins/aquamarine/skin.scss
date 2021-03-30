@@ -1,0 +1,70 @@
+@import "compass";
+@import "theme_variables";
+
+
+$link-hover-color: 			#10b292;
+$theme-color-default: 		#10b292;
+
+$topbar-color-hover: 		$link-hover-color;
+$topbar-link-color: 		#fff;
+$topbar-link-hover-color: 	$link-hover-color;
+$topbar-border:             1px solid #79818d;
+
+$headermain-outside-bg: 	#434a54;
+$headermain-bg: 			$headermain-outside-bg;
+$headermain-color: 			#ccd1d9;
+$headermain-color-hover: 		$link-hover-color;
+$headermain-link-hover-color: 	$link-hover-color;
+
+$mainnav-outside-border:	1px solid #79818d;
+$mainnav-outside-bg: 		#656d78;
+$mainnav-bg: 				$mainnav-outside-bg;
+$mainnav-color: 			#9c9c9c;
+$mainnav-color-hover: 		$link-hover-color;
+$mainnav-link-color: 		#9c9c9c;
+$mainnav-link-hover-color: 	$link-hover-color;
+
+$footer-top-outside-border: 	#79818d;
+$footer-top-outside-bg: 		#656d78;
+$footer-top-bg: 				$footer-top-outside-bg;
+$footer-top-color: 				#ccd1d9;
+$footer-top-color-hover: 		$link-hover-color;
+
+$footer-center-bg: 				$footer-center-outside-bg;
+$footer-center-color: 			#ccd1d9;
+$footer-center-color-hover: 	$link-hover-color;
+
+$footer-nav-color: 				#9c9c9c;
+$footer-nav-color-hover: 		$link-hover-color;
+
+$cart-heading-color : 					$theme-color-default;
+
+$vertical-menu-link-hover-color:    	$theme-color-default;
+
+$block-module-heading-bg:				$theme-color-default;
+$block-module-border-color: 			$border-color;
+$block-module-content-bg:				$white;
+
+$block-module-highlighted-bg			: #ec87c0;
+$block-module-highlighted-border		: $base-border-color;
+
+$button-addtocart-bg-hover:         $theme-color-default;
+$button-addtocart-color:            $white;
+$button-addtocart-border-2:         $theme-color-default;
+$button-addtocart-hover-color:      $white;
+
+$product-name-color: 				#434a54;
+$product-name-hover-color: 			$link-hover-color;
+$product-price-color: 				#e9573f;
+
+$breadcrumb-active-color: 			$link-hover-color;
+
+$nav-pills-active-link-hover-bg: 	$theme-color-default;
+
+$image-theme-base-path: "img/";
+
+@import "../_skin";
+
+#cart .title-cart{
+  border-color: #77CDBB;
+}

@@ -1,0 +1,216 @@
+@import "compass";
+@import "theme_variables";
+
+@media (max-width: 1196px) and (min-width: 992px) {
+	//Theme config live
+	.editortool .label-customize {display: none;}
+}
+
+@media (max-width: $screen-md - 2){ //max 990px
+	
+	
+}
+@media (min-width: $screen-lg) { // min 1200px
+
+	//GUEST TRACKING
+	#guestTracking {
+		.form-group {
+      		overflow: hidden;
+	      	i {
+	        	@include rtl-padding-left(10px);
+	      	}
+    	}
+    	.form-control {
+      		@include rtl-float-left ();
+    	}
+    	label {
+      		@include rtl-float-left ();
+      		clear: both;
+     		width: 100%;
+    	}
+	}
+}
+@media (max-width: $screen-md-max) { // max 1199px
+  	//Zoom
+  	.zoomdiv {
+    	display: none !important;
+  	}
+}
+
+@media (min-width: $screen-xs-min) and (max-width: $screen-sm-max) { // min 479px max 991px
+	.blockcart_top{
+	}	
+} 
+
+@media (max-width: $screen-sm-max) { // max 991px
+	.float-vertical.active{
+		> .block_content{
+			position:relative;		
+		}
+	} 
+	#footer #social_block{
+		 @include rtl-float-left();
+		 margin-top: 10px;
+	}	
+	#leo-verticalmenu .open > .dropdown-menu {
+		max-width: 100%;
+		position: relative;
+		left: auto !important;
+		width: 100% !important;
+		top: 100%;
+	}	
+	div.verticalmenu .navbar-nav{
+		margin: 0;
+	}
+	.header_user_info .dropdown-toggle{
+	  display: block;
+	}
+	.dropdown-menu > li > a{padding: 3px 0;}
+	.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus{
+		background: transparent;
+	}
+	ul.links li .fa, ul.links li .icon{
+		width: 10px;
+	}
+	.page-product-heading{margin-top: 10px;}
+	#footer #newsletter_block_left .newsletter-input{width: 200px;}
+	#footer #newsletter_block_left.block .title_block{
+		margin-bottom: 10px;
+	}
+}
+
+@media (max-width: $screen-xs-max) { // max 767px
+	//Menu Canvas
+	html {background:none}
+	.navbar-header .navbar-toggle{
+		  display: block;
+		  @include rtl-float-left();
+		  width: 40px;
+		  padding: 8px;
+		  background-color: $theme-color-default;
+		  .icon-bar{
+		  	background: $white;
+		  }
+	}
+	.navbar-collapse  {
+		&.in{
+			.sf-menu {
+				display: block !important;
+				> li {
+					span{
+						top: 2px;
+						width: 15px;
+					}
+					> ul {
+					padding: 5px 10px;
+					top: 10px;
+					}
+				}
+				
+			}
+		}
+			
+	}
+
+	#block_top_menu .navbar-nav {
+		float: none;
+	  > li {
+	  	background: none;
+	  }
+	  img{
+	  	width: 100%;
+	  }
+	}	
+	//end canvas
+	header .g-dropdown {
+		position: relative;
+		.groupe-btn {padding:5px; @include rtl-float-left(); cursor:pointer;}
+		ul.links {
+			li {display: block;}
+		}
+	}
+	#header-main{
+		.inner{
+			text-align: center;
+		}
+		#header_logo a{display: inline-block;}
+		 
+	}
+	#header_logo{
+		margin: 0 0 20px;
+	}
+	.header_user_info {
+		position: absolute;
+		top: 10px;
+		@include rtl-right(10px);
+		width: 100px;
+		.dropdown-menu {
+			@include rtl-right(0 !important);
+			@include rtl-left(inherit);
+		}
+	}
+	form#searchbox {
+		float: none;
+	}
+	#cart {
+		width: 55%;
+		margin: 0 auto;
+		float: none !important;
+	}
+	.sidebar .block h4{
+		border: none;
+		padding-bottom: 0;
+	}
+	#send_friend_form {
+		width: 280px;
+	}
+	 #poweredby {text-align: center;}
+	 #footnav {text-align: center; margin-top: 10px;}
+	 .effect{
+		text-align: center;
+	}
+	#search_block_top{
+		margin-bottom: 15px;
+	}
+	#leosearchtopbox{
+		margin-right: 8px;
+		select{width: 40%;}
+		input{width: 60%;}
+	}
+	.product-block .quick-view{
+		display: none;
+	}
+	.footer-block{
+		min-height: 160px;
+		margin-bottom: 0;
+		.block_content {
+			margin-bottom: 20px;
+		}
+	}
+}
+@media (max-width: $screen-xs) { // max 480px
+	header .nav .row {padding: 10px 0;}
+	#cart .heading {
+		display: inline-block; 
+	}
+	
+	.box-services{display: none}
+	.product-block .functional-buttons{
+		left: 0;
+	}
+	#layer_cart .layer_cart_cart .button-container{
+		text-align: center;
+	}
+	#layer_cart .layer_cart_cart .button-container .btn{
+		float: none!important;
+		margin-bottom: 10px;
+	}
+	
+}
+@media (max-width: $screen-xs - 1) { // max 479px
+	
+	#thumbs_list {
+		margin-left: 30px;
+		width: 242px;
+	}
+}
